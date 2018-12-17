@@ -2,8 +2,9 @@ var express = require('express');
 var router = express.Router();
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/api/get/train_tickets', function(req, res, next) {
+    console.log(req.query);
+    res.send(req.query);
 });
 
 module.exports = router;
